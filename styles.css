@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+#heart-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart {
+    font-size: 100px;
+    transform-origin: center; /* Set the transform origin to the center */
+    animation: explode 1s forwards;
+    animation-delay: 1s;
+}
+
+#content {
+    opacity: 0; /* Initially set opacity to 0 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure the content is above the heart */
+}
+/* Style for the heart-floating-container */
+/* Style for the heart-floating-container */
+.heart-float {
+    display: none; /* Initially hide the heart container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the hearts are behind other content */
+}
+
+/* Style for the heartfloating */
+.heartfloating {
+    position: absolute;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    background-image: url('heart_image.png'); /* Use a heart image */
+    background-size: cover; /* Ensure the image covers the div */
+    bottom: -40px; /* Initial position at the bottom */
+    left: calc(50% - 20px); /* Center horizontally */
+    animation: pulseHeart 2s infinite alternate; /* Apply the pulseHeart animation */
+    margin: 10;
+}
+
+@keyframes pulseHeart {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.3); /* Scale up */
+    }
+}
+#content {
+    opacity: 0; /* Initially set opacity to 0 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure the content is above the heart */
+}
+
+#audioplayer {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: pink;
+    border-bottom: 2px solid black;
+    padding: 8px 0;
+    text-align: center; /* Adjust padding to make it smaller */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px 10px; 
+    font-size: 14px; 
+    line-height: 1.2; 
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkred;
+}

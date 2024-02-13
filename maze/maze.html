@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="stylesmaze.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../quotes.html">Poems and Quotes</a></li>
+            <li><a href="../index.html">PRESS THE HEART</a></li> 
+            <li><a href="maze\maze.html">Love Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Love Calculator</h1>
+        <div class="heart-container">
+            <img src="heart.png" alt="Heart" class="heart-image">
+            <div class="love-percentage" id="lovePercentage"></div>
+            <div id="result"></div>
+            <div class="names-section">
+                <div class="name" id="name1"></div>
+                <div class="name" id="name2"></div>
+            </div>
+        </div>
+        <div class="input-section">
+            <label for="nameInput1">Name 1:</label>
+            <input type="text" id="nameInput1" placeholder="Enter first name">
+            <label for="nameInput2">Name 2:</label>
+            <input type="text" id="nameInput2" placeholder="Enter second name">
+            <button id="calculateButton">Calculate</button>
+        </div>
+    </div>
+    <script src="maze.js"></script>
+</body>
+</html>
